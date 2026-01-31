@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rune Calculator</title>
+  <link rel="stylesheet" href="design.css">
+  <link rel="icon" type="image/png" href="logo.png">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Rune Calculator</h1>
+    <div class="tab-buttons">
+      <button class="tab-button active" onclick="openTab('rune')">Rune Calculator</button>
+      <button class="tab-button" onclick="openTab('passive')">Passive Calculator</button>
+    </div>
+    <div class="tab-content" id="rune-tab">
+      <div class="calculator">
+      <div class="inputs">
+        <label for="rps">RPS</label>
+        <input type="text" id="rps" min="0" step="any" placeholder="Enter RPS">
+        <label for="primordialLuck">Primordial Luck</label>
+        <input type="text" id="primordialLuck" min="0" step="any" placeholder="Enter Primordial Luck (optional)">
+        <button id="calculateBtn">Calculate</button>
+      </div>
+        <div class="output" id="output"></div>
+      </div>
+      <div style="margin-top:32px; display: flex; gap: 24px; align-items: center;">
+        <label>
+          <input type="checkbox" id="hideInstantToggle">
+          Hide Instant
+        </label>
+        <label>
+          <input type="checkbox" id="showGraphsToggle" checked>
+          Show Graphs
+        </label>
+      </div>
+      <div id="runeList"></div>
+    </div>
+    <div class="tab-content" id="passive-tab" style="display: none;">
+      <div class="calculator">
+        <div class="inputs">
+          <label for="passiveLuck">Passive Luck</label>
+          <input type="text" id="passiveLuck" min="0" step="any" placeholder="Enter Passive Luck">
+          <button id="passiveCalculateBtn">Calculate</button>
+        </div>
+        <div class="output" id="passiveOutput"></div>
+      </div>
+      <div style="margin-top:32px; display: flex; gap: 24px; align-items: center;">
+        <label>
+          <input type="checkbox" id="hidePassiveInstantToggle">
+          Hide Instant
+        </label>
+      </div>
+      <div id="passiveList"></div>
+    </div>
+  </div>
+  <script src="main.js" defer></script>
+</body>
+</html>

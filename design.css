@@ -1,0 +1,188 @@
+body {
+  background: #1a1a1a;
+  color: #e0e0e0;
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+  background: #252525;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00d4ff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #b0b0b0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+input[type="number"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #333333;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  transition: box-shadow 0.3s;
+}
+input[type="number"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.3);
+}
+#calculateBtn, #passiveCalculateBtn {
+  padding: 14px;
+  background: linear-gradient(90deg, #00d4ff, #007bff);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+#calculateBtn:hover, #passiveCalculateBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+}
+.output {
+  background: #2a2a2a;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 30px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #00d4ff;
+  font-weight: 500;
+  outline: #050505;
+  outline-style: inset;
+}
+#runeList .output {
+  background: #2a2a2a;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 20px;
+  text-align: left;
+  color: #e0e0e0;
+}
+#runeList .output b {
+  color: #00d4ff;
+}
+#runeList ul {
+  margin: 8px 0 0 20px;
+  padding: 0;
+}
+#rps, #passiveLuck, #primordialLuck {
+    color: rgb(255, 255, 255);
+    background-color: rgb(44, 44, 44);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(3, 3, 3, 0.4);
+    outline: #050505;
+    outline-style: solid;
+    
+}
+#hideInstantToggle, #showGraphsToggle, #hidePassiveInstantToggle {
+    background-color: #333333;
+    border-radius: 8px;
+    outline: #050505;
+    outline-style: inset;
+}
+#runeList li {
+  margin-bottom: 4px;
+}
+#runeList .output {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+#runeList .output:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(1, 1, 1, 1);
+}
+#passiveList .output {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+#passiveList .output:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(1, 1, 1, 1);
+}
+#runeList .output ul {
+  color:#00d4ff;
+  text-align: left;
+}
+#runeList .output,
+#passiveList .output {
+  background: #2a2a2a;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 20px;
+  text-align: left;
+  color: #e0e0e0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+#runeList .output b,
+#passiveList .output b {
+  color: #00d4ff;
+}
+#runeList ul,
+#passiveList ul {
+  margin: 8px 0 0 20px;
+  padding: 0;
+  list-style-type: disc;
+}
+#runeList li,
+#passiveList li {
+  margin-bottom: 4px;
+  color: #00d4ff;
+}
+#runeList .output:hover,
+#passiveList .output:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(1, 1, 1, 1);
+}
+.tab-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  background: #333333;
+  color: #b0b0b0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  outline: #050505;
+  outline-style: inset;
+}
+.tab-button.active {
+  background: linear-gradient(90deg, #00d4ff, #007bff);
+  color: #fff;
+}
